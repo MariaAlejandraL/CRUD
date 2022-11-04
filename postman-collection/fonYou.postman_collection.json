@@ -1,0 +1,118 @@
+{
+	"info": {
+		"_postman_id": "402df262-84b2-4c1d-9cd8-57bcf70a6db8",
+		"name": "fonYou",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22877776"
+	},
+	"item": [
+		{
+			"name": "createCharactr",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Michael Scott\",\r\n    \"role\": \"Regional Manager\",\r\n    \"description\": \"Serving as the Regional Manager of the Scranton branch of a paper distribution company, known as Dunder Mifflin Inc.\",\r\n    \"date\": \"3/11/2022\"\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/charactr",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"charactr"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getCharactrs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/charactrs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"charactrs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getCharactrByID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/charactr/27",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"charactr",
+						"27"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "editCharactr",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n       \"name\": \"Michael Scott\",\r\n        \"role\": \"Assistant to the Regional Manager\",\r\n        \"description\": \"Serving as the Regional Manager of the Scranton branch of a paper distribution company, known as Dunder Mifflin Inc.\",\r\n        \"date\": \"3/11/2022\"\r\n    \r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/charactr/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"charactr",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteCharactr",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
